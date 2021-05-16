@@ -11,12 +11,32 @@
         <div class="container">
             <!--homepage with start button-->
             <div id="homepage">
-                <h2></h2>
+                <h1>Coding Quiz Challenge</h1>
+                <h2>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penelize your score/time by ten seconds!</h2>
+                <!--start button-->
+                <button id="starbtn">Start Quiz</button>
+                <!--High Score buttn-->
+                <button id="homePageHighScore" onclick="showHighScore()">High Scores</button>
             </div>
 
             <!--quiz with questions-->
+            <div id="quiz">
+                <div id="timer">Time left</div>
+                <div id="questions"><p>Insert Questions Here</p></div>
+                    <!--Insert buttons for question's answer selection-->
+                    <button id="A" onclick="checkAnswer('a')">A</button>
+                    <button id="B" onclick="checkAnswer('b')">B</button>
+                    <button id="C" onclick="checkAnswer('c')">C</button>
+                    <button id="D" onclick="checkAnswer('d')">D</button>
+                <div id="answer"></div>
+            </div>
 
             <!--element for gameover-->
+            <div id="gameover">
+                <div id="finalScore"></div>
+                <input type="text" size="30" placeholder="Enter your Initials" name="initials" id="initials"/>
+                <button id="submitScore">Submit Score</button>
+            </div>
 
             <!--element for high scores-->
 
