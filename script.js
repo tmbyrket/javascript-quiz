@@ -20,7 +20,57 @@ var ButtonC=document.getElementById("c");
 var ButtonD=document.getElementById("d");
 
 //make quiz questions an object
-
+var quizQuestions = [{
+    question: "What does API stand for?",
+    choiceA: "Auxillary Programing Instance",
+    choiceB: "Application Programing Interface",
+    choiceC: "Application Programing Instance",
+    choiceD: "Auxillary Programing Interface",
+    correctAnswer: "b"},
+    {
+    question: "What does DOM stand for?",
+    choiceA: "Document Object Model",
+    choiceB: "Document Object Moment",
+    choiceC: "Document Obtuse Magnet",
+    choiceD: "Darn Oreos Mess",
+    correctAnswer: "a"},
+    {
+    question: "What is it called when you pass a function into a function?",
+    choiceA: "a hollaback girl",
+    choiceB: "inception",
+    choiceC: "an audition",
+    choiceD: "A callback function",
+    correctAnswer: "d"},
+    {
+    question: "What HTML attribute references an external JavaScript file?",
+    choiceA: "src",
+    choiceB: "h2",
+    choiceC: "script",
+    choiceD: "class",
+    correctAnswer: "a"},
+    {
+    question: "Which built-in method returns the string representation of the number's value?",
+    choiceA: "ToValue()",
+    choiceB: "ToNumber()",
+    choiceC: "ToString()",
+    choiceD: "None of the above.",
+    correctAnswer: "c"},
+    {
+    question:"What is primarily used to add visual styling to a web page?",
+    choiceA: "HTML",
+    choiceB: "magic",
+    choiceC: "Python",
+    choiceD: "CSS",
+    correctAnswer: "d"},
+    {
+    question: "How quickly does localStorage data clear out?",
+    choiceA:"When the user closes the browser",
+    choiceB: "LocalStorage data does not clear out.",
+    choiceC: "When the computer is restarted.",
+    choiceD: "When you unplug your computer.",
+    correctAnswer: "b" },
+    
+    ];
 
 //define other global variabels
 
