@@ -1,4 +1,3 @@
-![screnshot](https://user-images.githubusercontent.com/81869202/118432394-19de0200-b69e-11eb-91ce-7266b79865dd.jpg)
 # JavaScript Quiz
 
 ## Purpose for User
@@ -28,3 +27,4 @@ THEN I can save my initials and score
 
 ## Image of Site:
 
+![screnshot](https://user-images.githubusercontent.com/81869202/118432394-19de0200-b69e-11eb-91ce-7266b79865dd.jpg)
