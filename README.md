@@ -1,3 +1,6 @@
+![screnshot](https://user-images.githubusercontent.com/81869202/118432394-19de0200-b69e-11eb-91ce-7266b79865dd.jpg)
+![screnshot](https://user-images.githubusercontent.com/81869202/118432405-1fd3e300-b69e-11eb-9416-136f18eee344.jpg)
+![screnshot](https://user-images.githubusercontent.com/81869202/118432406-219da680-b69e-11eb-87e8-b3df316e611d.jpg)
 # JavaScript Quiz
 
 ## Purpose for User
