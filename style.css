@@ -62,7 +62,7 @@ button:hover{
 
 #timer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #5a69f0;
+    background-color: #6da7dd;
     color: #eeeeee;
     font-size: x-large;
     text-shadow: .5px .5px black;
@@ -102,9 +102,9 @@ button:hover{
 #highscore-header{
     display: flex;
     justify-content: space-around;
-    border-bottom-style: ridge;
+    border-bottom-style: outset;
     margin-bottom: .5rem;
-    background-color: #5a69f0;
+    background-color: #1ddae7;
     color: #eeeeee;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

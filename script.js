@@ -1,23 +1,23 @@
 //define all HTML elements that will be called
-var quizBody=document.getElementById("quiz");
-var resultsEl=document.getElementById("result");
-var finalScoreEl=document.getElementById("finalScore");
-var gameoverDiv=document.getElementById("gameover");
-var questionsEl=document.getElementById("questions");
-var quizTimer=document.getElementById("timer");
-var startQuizButton=document.getElementById("startbtn");
-var startQuizDiv=document.getElementById("startpage");
-var highscoreContainer=document.getElementById("highscore-container");
-var highscoreDiv=document.getElementById("highscore-page")
-var highscoreInputName=document.getElementById("initials");
-var highscoreDisplayName=document.getElementById("highscore-initials");
-var endGameBtns=document.getElementById("endGameBtns");
-var submitScoreBtn=document.getElementById("submitScore");
-var highscoreDisplayScore=document.getElementById("highscore-score");
-var buttonA=document.getElementById("a");
-var buttonB=document.getElementById("b");
-var buttonC=document.getElementById("c");
-var buttonD=document.getElementById("d");
+var quizBody = document.getElementById("quiz");
+var resultsEl = document.getElementById("answer");
+var finalScoreEl = document.getElementById("finalScore");
+var gameoverDiv = document.getElementById("gameover");
+var questionsEl = document.getElementById("questions");
+var quizTimer = document.getElementById("timer");
+var startQuizButton = document.getElementById("startbtn");
+var startQuizDiv = document.getElementById("startpage");
+var highscoreContainer = document.getElementById("highscoreContainer");
+var highscoreDiv = document.getElementById("high-scorePage")
+var highscoreInputName = document.getElementById("initials");
+var highscoreDisplayName = document.getElementById("highscore-initials");
+var endGameBtns = document.getElementById("endGameBtns");
+var submitScoreBtn = document.getElementById("submitScore");
+var highscoreDisplayScore = document.getElementById("highscore-score");
+var buttonA = document.getElementById("a");
+var buttonB = document.getElementById("b");
+var buttonC = document.getElementById("c");
+var buttonD = document.getElementById("d");
 
 //make quiz questions an object
 var quizQuestions = [{
@@ -89,7 +89,7 @@ function generateQuizQuestion(){
     }
     
     var currentQuestion = quizQuestions[currentQuestionIndex];
-    questionsEl.innerHTML = "<p>" + currentQuestion.question + "<p>";
+    questionsEl.innerHTML = "<p>" + currentQuestion.question + "</p>";
     buttonA.innerHTML = currentQuestion.choiceA;
     buttonB.innerHTML = currentQuestion.choiceB;
     buttonC.innerHTML = currentQuestion.choiceC;
@@ -100,24 +100,23 @@ function generateQuizQuestion(){
 //function for start quiz
 function startQuiz(){
     gameoverDiv.style.display = "none";
-    startQuizDiv.style.display = "none";
     generateQuizQuestion();
-}
+
 
     //start the time range
     timerInterval = setInterval(function() {
         timeLeft--;
-        quizTimer.textContent= "Time Left: " + timeLeft;
+        quizTimer.textContent = "Time Left: " + timeLeft;
 
         if(timeLeft===0) {
             clearInterval(timerInterval);
             showScore();
         }
-    }, 1000);
-    
+    }, 1000);    
     quizBody.style.display = "block";
-
+}
 //function to show score after finishing quiz or running out of time
+
 function showScore() {
     quizBody.style.display = "none"
     gameoverDiv.style.display = "flex";
@@ -170,11 +169,11 @@ function generateHighscores(){
 
 //function to display high scores and hide all the other pages
 function showHighscore () {
-    startQuizDiv.style.display=none;
-    gameoverDiv.style.display="none";
-    highscoreContainer.style.display="flex";
-    highscoreDiv.style.display="block";
-    endGameBtns.style.display="flex";
+    startQuizDiv.style.display = "none"
+    gameoverDiv.style.display = "none";
+    highscoreContainer.style.display = "flex";
+    highscoreDiv.style.display = "block";
+    endGameBtns.style.display = "flex";
 
     generateHighscores();
 }
@@ -191,7 +190,7 @@ function clearScore (){
 function replayQuiz () {
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
-    startQuizDiv.style.display = "none";
+    startQuizDiv.style.display = "flex";
     timeLeft = 60;
     score = 0;
     currentQuestionIndex = 0;
@@ -208,7 +207,7 @@ function checkAnswer(answer){
         currentQuestionIndex++;
         generateQuizQuestion();
     } else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex) {
-        alert("That is Incorrect :(");
+        alert("That is Incorrect :(")
         currentQuestionIndex++;
         generateQuizQuestion();
     } else {
@@ -217,4 +216,4 @@ function checkAnswer(answer){
 }
 
 //starts da quiz
-startQuizButton.addEventListener("click", startQuiz);
+startQuizButton.addEventListener("click",startQuiz);
