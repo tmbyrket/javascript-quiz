@@ -1,5 +1,23 @@
 //define all HTML elements that will be called
-
+var quizBody=document.getElementById("quiz");
+var resultsEl=document.getElementById("result");
+var finalScoreEl=document.getElementById("finalScore");
+var gameoverDiv=document.getElementById("gameover");
+var questionsEl=document.getElementById("questions");
+var quizTimer=document.getElementById("timer");
+var startQuizButton=document.getElementById("startbtn");
+var startQuizDiv=document.getElementById("startpage");
+var highscoreContainer=document.getElementById("highscore-container");
+var highscoreDiv=document.getElementById("highscore-page")
+var highscoreInputName=document.getElementById("initials");
+var highscoreDisplayName=document.getElementById("highscore-initials");
+var endGameBtns=document.getElementById("endGameBtns");
+var submitScoreBtn=document.getElementById("submitScore");
+var highscoreDisplayScore=document.getElementById("highscore-score");
+var ButtonA=document.getElementById("a");
+var ButtonB=document.getElementById("b");
+var ButtonC=document.getElementById("c");
+var ButtonD=document.getElementById("d");
 
 //make quiz questions an object
 

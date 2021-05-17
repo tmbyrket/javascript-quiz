@@ -89,7 +89,7 @@ button:hover{
     border: solid 2px;
 }
 
-#high-scorePage{
+#highscore-page{
     display: none;
     width: 50%;
     border: solid;
@@ -109,7 +109,7 @@ button:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#highscoreContainer{
+#highscore-container{
     height: 100%;
     width: 100%;
     display: none;
